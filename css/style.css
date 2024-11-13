@@ -1,0 +1,39 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  box-sizing: border-box;
+  color: #ec512f;
+  font-weight: 500;
+}
+body,
+section,
+header,
+div,
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+figure,
+figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+}
+
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: #ec512f;
+}
+.footer-img{
+    height: 45px;
+}
