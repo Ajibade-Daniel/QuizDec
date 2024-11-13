@@ -83,3 +83,80 @@ body {
     #000030 100%     /* final color for the rest of the page */
   );
 }
+
+/* Button container */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+/* Get Started Button style */
+.get-started-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  outline: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.get-started-button:hover {
+  transform: scale(1.05);
+}
+
+.get-started-button:active {
+  transform: scale(0.95);
+}
+
+/* dradient border */
+.gradient-border {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: linear-gradient(to right, #20c997, #0d6efd, #6f42c1);
+  padding: 2px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.get-started-button:hover .gradient-border {
+  opacity: 1;
+}
+
+/* button content */
+.button-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: #000021; /* sark background */
+  color: #ffffff;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* text hover effect */
+.get-started-button:hover .button-content span {
+  transform: translateX(4px);
+  transition: transform 0.5s;
+}
+
+/* arrow icon styles */
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.5s;
+}
+
+.get-started-button:hover .arrow-icon {
+  transform: translateX(4px);
+}
