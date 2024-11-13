@@ -66,8 +66,14 @@ nav li {
 
 a {
   text-decoration: none;
-  color: #ec512f;
+  color: white;
 }
+
+#current{
+  color: #ec512f;
+  text-decoration: none;
+}
+
 .footer-img{
     height: 45px;
 }
