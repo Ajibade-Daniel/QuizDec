@@ -166,3 +166,25 @@ a img{
 main{
   background-color: #000021;
 }
+
+/* styles for small screens */
+
+@media only screen and (max-width:480px)
+{
+    header {
+        height: 50px;
+        padding: 1em 0em 2em 1em;
+		
+    }
+    header h1 {
+        font-size: 30px;   
+    }
+    
+}
+
+/* styles for tablet screens */
+@media only screen and (min-width: 481px)
+and (max-width: 768px)
+{
+    
+}
