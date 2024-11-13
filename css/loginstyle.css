@@ -30,3 +30,20 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  h1{
+    color: #000030;
+    font-size: 50px;
+    margin-left: 14em;
+    margin-top: 2em;
+  }
+
+  form{
+    margin-left: 46em;
+    margin-top: 4em;
+  }
+
+  .form-group{
+    color: #000030;
+    font-size: 15px;
+  }
