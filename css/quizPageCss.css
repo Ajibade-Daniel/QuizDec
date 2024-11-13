@@ -1,12 +1,33 @@
 body{
 
 }
-
+hr{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
 nav {
     background-image: url(../img/QuizDEC\ \(3\).png);
     background-position: left top;
     background-size: 110px;
     background-repeat: no-repeat;
-    padding: 1em 2em 2em 7em;
-    margin-bottom: 50px ;
+    padding: 1em 2em 1em 6em;
   }
+nav a{
+    margin-left: 70%;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 0.25rem;
+    margin: 0.5em;
+}
+.card{
+    background-color: white;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+
+    display: flex;
+    flex-direction: column;
+}
