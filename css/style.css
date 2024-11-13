@@ -6,6 +6,9 @@ body {
   font-weight: 500;
   height: 100vh;
   margin: 0;
+}
+
+#firstSection{
   /* ombre effect as background gradient */
   background: linear-gradient(
     to bottom right, /*  gradient direction */
@@ -30,9 +33,6 @@ figcaption {
   margin: 0;
   padding: 0;
 }
-body{
-  margin-left: 4em;
-}
 header {
   background-image: url("../img/orangegirl_fr.png");
   background-size: 80%;
@@ -41,6 +41,7 @@ header {
   background-position-y: 5em;
   width: 100%;
   min-height: 700px;
+  margin-left: 2em;
 }
 
 nav {
