@@ -1,0 +1,32 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: black;
+    box-sizing: border-box;
+    color: #ec512f;
+    font-weight: 500;
+    height: 100vh;
+    margin: 0;
+    /* ombre effect as background gradient */
+    background: linear-gradient(
+      to bottom right, /*  gradient direction */
+      #6145B7 0%,      /* starting color at the top left corner */
+      #3E30A0 5%,     /* second color transition */
+      #02066F 25%,     /* third color transition */
+      #000030 100%     /* final color for the rest of the page */
+    );
+  }
+  body,
+  section,
+  header,
+  div,
+  p,
+  h1,
+  h2,
+  h3,
+  ul,
+  li,
+  figure,
+  figcaption {
+    margin: 0;
+    padding: 0;
+  }

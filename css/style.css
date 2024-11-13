@@ -79,19 +79,6 @@ a {
 }
 
 
-body {
-  height: 100vh;
-  margin: 0;
-  /* ombre effect as background gradient */
-  background: linear-gradient(
-    to bottom right, /*  gradient direction */
-    #6145B7 0%,      /* starting color at the top left corner */
-    #3E30A0 25%,     /* second color transition */
-    #02066F 50%,     /* third color transition */
-    #000030 100%     /* final color for the rest of the page */
-  );
-}
-
 /* Button container */
 .button-container {
   display: flex;
