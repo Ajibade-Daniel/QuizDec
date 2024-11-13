@@ -38,6 +38,19 @@ header {
   min-height: 700px;
 }
 
+nav {
+  background-image: url(../img/QuizDEC\ \(2\).png);
+  background-position: left top;
+  background-size: 180px;
+  background-repeat: no-repeat;
+  padding: 1em 2em 2em 7em;
+  margin-bottom: 20px ;
+}
+
+nav ul{
+  margin-top: 1.5em;
+  margin-left: 45em;
+}
 
 li {
 }
