@@ -85,3 +85,8 @@ body {
     #000030 100%     /* final color for the rest of the page */
   );
 }
+main{
+  background-color: #000021;
+  background-image: url(../img/QuizDEC\ \(2\).png);
+
+}
