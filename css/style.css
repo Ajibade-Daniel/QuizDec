@@ -21,6 +21,14 @@ figcaption {
   padding: 0;
 }
 
+header {
+  background-image: url("../img/orange\ girl.png");
+  background-size: cover;
+  width: 100%;
+  min-height: 600px;
+}
+
+
 li {
 }
 
