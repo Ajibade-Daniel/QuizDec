@@ -10,8 +10,8 @@ body {
   background: linear-gradient(
     to bottom right, /*  gradient direction */
     #6145B7 0%,      /* starting color at the top left corner */
-    #3E30A0 25%,     /* second color transition */
-    #02066F 50%,     /* third color transition */
+    #3E30A0 5%,     /* second color transition */
+    #02066F 25%,     /* third color transition */
     #000030 100%     /* final color for the rest of the page */
   );
 }
@@ -32,7 +32,7 @@ figcaption {
 }
 
 header {
-  background-image: url("../img/orange\ girl.png");
+  background-image: url("../img/orangegirl_fr.png");
   background-size: cover;
   width: 100%;
   min-height: 700px;
