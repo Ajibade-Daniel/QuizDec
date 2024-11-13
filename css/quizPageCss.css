@@ -1,0 +1,12 @@
+body{
+
+}
+
+nav {
+    background-image: url(../img/QuizDEC\ \(3\).png);
+    background-position: left top;
+    background-size: 110px;
+    background-repeat: no-repeat;
+    padding: 1em 2em 2em 7em;
+    margin-bottom: 50px ;
+  }
