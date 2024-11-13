@@ -162,3 +162,9 @@ body {
 .get-started-button:hover .arrow-icon {
   transform: translateX(4px);
 }
+
+main{
+  background-color: #000021;
+  background-image: url(../img/QuizDEC\ \(2\).png);
+
+}
