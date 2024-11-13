@@ -35,6 +35,8 @@ header {
   background-image: url("../img/orangegirl_fr.png");
   background-size: 80%;
   background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 5em;
   width: 100%;
   min-height: 700px;
 }
