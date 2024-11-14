@@ -46,9 +46,10 @@ nav {
   background-position: left top;
   background-size: 180px;
   background-repeat: no-repeat;
-  padding: 1em 2em 2em 7em;
-  margin-bottom: 20px ;
+  padding: 1em 2em 2em 10em;
+  margin-bottom: 20px;
 }
+
 
 nav ul{
   margin-top: 1em;
@@ -86,12 +87,11 @@ a img{
 }
 
 
-/* Button container */
+/* button container */
 .button-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 /* Get Started Button style */
@@ -161,6 +161,25 @@ a img{
 
 .get-started-button:hover .arrow-icon {
   transform: translateX(4px);
+}
+
+.landing-content {
+  padding-left: 10em; 
+  padding-top: 5em; 
+}
+
+.landing-content h1,
+.landing-content p,
+.landing-content .button-container {
+  text-align: left;
+}
+
+.landing-content h1 {
+  margin-bottom: 0.5em;
+}
+
+.landing-content p {
+  margin-bottom: 1em;
 }
 
 main{
