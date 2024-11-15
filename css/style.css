@@ -43,6 +43,17 @@ header {
   min-height: 700px;
   margin-left: 2em;
 }
+header section{
+  margin-top: 5em;
+  margin-left: 6em;
+  /* Something is wrong with the margin right I think. I would use a br to fix this for now */
+  /* margin-right: ; */
+  padding-right: 3em;
+}
+section h1{
+  font-size: 75px;
+  color: white;
+}
 
 nav {
   background-image: url(../img/QuizDEC\ \(2\).png);
