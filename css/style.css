@@ -1,3 +1,8 @@
+
+Dara Paul-Makwe
+14:21 (5 minutes ago)
+to me
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: black;
@@ -9,21 +14,15 @@ body {
   overflow-x: hidden;
 }
 
-#firstSection {
+#firstSection{
+  /* ombre effect as background gradient */
   background: linear-gradient(
-      to bottom right, 
-      #6145B7 0%,     
-      #3E30A0 5%,      
-      #02066F 25%,     
-      #000030 100%     
-    ),
-    url("../img/orangegirl_fr.png"); /* Background image */
-  background-size: cover, 80%; 
-  background-repeat: no-repeat, no-repeat;
-  background-position: center, center 5em;
-  width: 100%;
-  min-height: 700px;
-  margin-left: 2em;
+    to bottom right, /*  gradient direction */
+    #6145B7 0%,      /* starting color at the top left corner */
+    #3E30A0 5%,     /* second color transition */
+    #02066F 25%,     /* third color transition */
+    #000030 100%     /* final color for the rest of the page */
+  );
 }
 body,
 section,
@@ -196,14 +195,6 @@ a img{
 }
 
 .landing-content h1 {
-  color: #ffffff;         
-  font-size: 4em;          
-  font-weight: bold;       
-  line-height: 1.2;       
-  margin-bottom: 0.5em;
-}
-
-.landing-content h1 {
   margin-bottom: 0.5em;
 }
 
@@ -222,7 +213,7 @@ main{
     header {
         height: 50px;
         padding: 1em 0em 2em 1em;
-		
+    
     }
     header h1 {
         font-size: 30px;   
