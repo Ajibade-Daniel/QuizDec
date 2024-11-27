@@ -2,27 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to QuizStack</title>
     <link rel="stylesheet" href="../css/loginstyle.css" />
+    <script src="../js/loginscript.js"></script>
 </head>
 <body>
-  <header><h1>Login</h1></header>
-    <section>
-        <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else lol.</small>
-            </div>
-            <br>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary">Continue</button>
-          </form>
-    </section>
+  <section>
+    <div class="form-container">
+      <header><h1>Login</h1></header>
+      <form>
+        <!-- Email address Input -->
+        <div class="input-group">
+          <input type="email" required class="input" id="email" placeholder=" " aria-describedby="emailHelp">
+          <label for="email" class="user-label">Email address</label>
+        </div>
+        <!-- Password Input-->
+        <div class="input-group">
+          <input type="password" required class="input" id="password" placeholder=" ">
+          <label for="password" class="user-label">Password</label>
+          <div id="alertBox" class="alert">
+            <p>Your password's safe with us!😉</p>
+          </div>
+        </div>
+        <!--Submit Button-->
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+  </section>
+  <script src="../js/script.js"></script>
 </body>
 </html>
+

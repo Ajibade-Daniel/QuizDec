@@ -8,15 +8,21 @@ body {
   margin: 0;
 }
 
-#firstSection{
-  /* ombre effect as background gradient */
+#firstSection {
   background: linear-gradient(
-    to bottom right, /*  gradient direction */
-    #6145B7 0%,      /* starting color at the top left corner */
-    #3E30A0 5%,     /* second color transition */
-    #02066F 25%,     /* third color transition */
-    #000030 100%     /* final color for the rest of the page */
-  );
+      to bottom right, 
+      #6145B7 0%,     
+      #3E30A0 5%,      
+      #02066F 25%,     
+      #000030 100%     
+    ),
+    url("../img/orangegirl_fr.png"); /* Background image */
+  background-size: cover, 80%; 
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center 5em;
+  width: 100%;
+  min-height: 700px;
+  margin-left: 2em;
 }
 body,
 section,
@@ -175,6 +181,14 @@ a img{
 .landing-content p,
 .landing-content .button-container {
   text-align: left;
+}
+
+.landing-content h1 {
+  color: #ffffff;         
+  font-size: 4em;          
+  font-weight: bold;       
+  line-height: 1.2;       
+  margin-bottom: 0.5em;
 }
 
 .landing-content h1 {
