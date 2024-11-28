@@ -14,7 +14,6 @@ body{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #952323d0;
     max-width: 25em;
   }
   
@@ -38,7 +37,7 @@ body{
     border-radius: 30%;
   }
   
-  /* On mouse-over, add a grey background color */
+  /* On mouse-over, add a purple background color */
   .container:hover input ~ .checkmark {
     background-color: #8e5cf37c;
   }
