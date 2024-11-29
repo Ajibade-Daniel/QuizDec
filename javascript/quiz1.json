@@ -1,0 +1,122 @@
+const content = [
+    {
+      "question": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "Hyperlinks and Text Marking Language",
+        "Home Tool Markup Language",
+        "Hyper Text Managing Language",
+        "High-level Text Modeling Language",
+        "Hyperlink Transfer Model"
+      ],
+      "answer": "Hyper Text Markup Language"
+    },
+    {
+      "question": "Which of the following is the correct HTML tag for the largest heading?",
+      "options": [
+        "heading",
+        "head",
+        "h1",
+        "link",
+        "title",
+        "header"
+      ],
+      "answer": "h1"
+    },
+    {
+      "question": "Which tag is used to create a hyperlink in HTML?",
+      "options": [
+        "a",
+        "link",
+        "url",
+        "hyperlink",
+        "anchor",
+        "href"
+      ],
+      "answer": "a"
+    },
+    {
+      "question": "What is the correct HTML tag for inserting a line break?",
+      "options": [
+        "lb",
+        "br",
+        "break",
+        "newline",
+        "lnbr",
+        "line"
+      ],
+      "answer": "br"
+    },
+    {
+      "question": "Which of the following is NOT a semantic HTML element?",
+      "options": [
+        "article",
+        "footer",
+        "div",
+        "header",
+        "section",
+        "aside"
+      ],
+      "answer": "div"
+    },
+    {
+      "question": "Which attribute is used to uniquely identify an HTML element?",
+      "options": [
+        "class",
+        "style",
+        "id",
+        "name",
+        "tag",
+        "key"
+      ],
+      "answer": "id"
+    },
+    {
+      "question": "Which of these tags is self-closing?",
+      "options": [
+        "div",
+        "img",
+        "span",
+        "a",
+        "p",
+        "h2"
+      ],
+      "answer": "img"
+    },
+    {
+      "question": "How can you create an ordered list in HTML?",
+      "options": [
+        "ul",
+        "ol",
+        "list",
+        "order",
+        "li",
+        "ordered"
+      ],
+      "answer": "ol"
+    },
+    {
+      "question": "Which HTML tag is used to define an internal style sheet?",
+      "options": [
+        "css",
+        "script",
+        "style",
+        "link",
+        "stylesheet",
+        "meta"
+      ],
+      "answer": "style"
+    },
+    {
+      "question": "What is the correct HTML tag for adding a background color to a webpage?",
+      "options": [
+        "body style='background-color:color'",
+        "background",
+        "color",
+        "bg",
+        "background-color",
+        "style"
+      ],
+      "answer": "body style=\"background-color:color;\""
+    }
+  ];

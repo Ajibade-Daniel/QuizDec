@@ -1,90 +1,113 @@
-body{
-    font-family:'Lexend Deca', sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    box-sizing: border-box;
 }
-/* 
- * Hide the inputs. 
- */
-
- input {
-    display: none;
-  }
-  
-  
-  /*
-   * Then, style the label so it looks like however you want.
-   * Here's a quick rundown of how I did it here:
-   */
-  
-  label{
-    display: block;
-    position: relative;
-    padding-left: 55px;
-    padding-bottom: 15px;
-    margin: 10px;
+body{
+    background: #000;
+}
+main{
+    background: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+main h1{
+    width: 100%;
+    border-bottom: 1px solid #071c95;
+    padding: 0;
+}
+h1 img{
+    padding: 0;
+    width: 7em;
+}
+.quiz{
+    padding: 20px 0;
+}
+.quiz h2{
+    font-size: 20px;
+    color: rgb(255, 94, 0);
+    font-weight: 600;
+}
+.opt{
+    background-color: #fff;
+    color: #222;
+    font-size: 0.85em;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #071c95;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 22px;
-  }
-  
-  /*
-  
-  
-  /*
-   * With how I decided to build this, the position: relative is super important.
-   * We're going to position a pseudo element within this element(As it is the containing box)
-   */
-  
-  label span {
-    position: relative;
-    line-height: 22px;
-  }
-  
-  
-  /* 
-   * Because we're using pseudo elements, a content property is required to make them appear.
-   */
-  
-  label span:before,
-  label span:after {
-    content: '';
-  }
-  
-  
-  /*
-   * We are using the :before peudo elemnt as the actual button,
-   * then we'll position the :after over it. You could also use a background-image,
-   * font-icon, or really anything if you want different styles.
-   * For the specific style we're going for, this approach is simply the easiest, but
-   * once you understand the concept you can really do it however you like.
-   */
-  
-  label span:before {
-    border: 1px solid #222021;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    display: inline-block;
-  }
-  
-  label span:after {
-    background: #222021;
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    top: 2px;
-    left: 4px;
-    transition: 300ms;
-    opacity: 0;
-  }
-  
-  /*
-   * This is the most important part of this whole file, if you understand what's happening here
-   * you can really make this in so many different ways.
-   * 
-   * We start by selecting the input inside of the label, with "label input". From there we use the 
-   * ":checked" selector to *only* select the input when it is checked. We then use the immediate sibling 
-   * selector(+) to select the span, and then it's pseudo element :after(What we are using to mark the button)
-   * Because we already styled the :after, all we have to do is set the opacity to 1, making it fade in.
-   */
-  label input:checked+span:after {
-    opacity: 1;
-  }
+    transition: all 0.3s;
+}
+.opt:hover{
+    background-color: #071c95;
+    color: #fff;
+    padding-left: 15px;
+    box-shadow: 0px 0px 15px grey;
+}
+.next-btn{
+    background-color: #071c95;
+    color: #ffff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.prev-btn{
+    background-color: grey;
+    color: #ffff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.ends{
+    color: #ffff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+.correct{
+    background-color: #9aeabc;
+}
+.incorrect{
+    background-color: #ff9393;
+}
+.selected{
+    background-color: #6472bf;
+    color: #fff;
+    padding-left: 10px;
+    box-shadow: 0px 0px 15px grey;
+    cursor: pointer;
+}
+.selected:hover{
+    background-color: #6472bf;
+    color: #fff;
+    padding-left: 15px;
+    box-shadow: 0px 0px 15px grey;
+    cursor: pointer;
+    padding-left: 15px;
+    box-shadow: 0px 0px 15px grey;
+}
+#navigator{
+    display: inline;
+}
