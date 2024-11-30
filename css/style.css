@@ -18,6 +18,9 @@ body {
     #02066F 25%,     /* third color transition */
     #000030 100%     /* final color for the rest of the page */
   );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body,
 section,
