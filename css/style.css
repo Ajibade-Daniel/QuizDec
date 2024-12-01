@@ -213,7 +213,10 @@ nav ul li a img {
 .footer-img {
   height: 45px;
 }
-
+footer{
+  margin-top:5em;
+  margin-left:5em;
+}
 main {
   background-color: #000030;
 }
@@ -274,7 +277,7 @@ main {
 @media screen and (max-width: 480px) {
   .text-container h1 {
     font-size: 30px;
-    margin-top:1.5em;
+    margin-top:2em;
   }
 }
 
