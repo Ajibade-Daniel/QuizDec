@@ -1,64 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QuizDec</title>
-    <link rel="stylesheet" href="../css/style.css" />
-    <script src="../javascript/script.js"></script>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizDec</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../javascript/script.js" defer></script>
+</head>
+<body>
   <section id="firstSection">
     <header>
-        <nav id="topbar">
-            <ul>
-               <li><a href="#" id="current">HOME</a></li>
-               <li><a href="#">ABOUT</a></li>
-               <li><a href="login.html">LOGIN</a></li>
-               <li><a href="#">INSTRUCTOR VIEW</a></li>
-               <li> <a href=""><img src="../img/search.png" alt="search" id="searchIcon"/></a></li>
-            </ul>
-         </nav>
-      <section>
-        <!-- I would evenetually remove the br from this block -->
-        <h1>Assesment <br> Made Easy</h1>
-        <p>Lorem ipsum dolor sit</p>
-        <a href="login.html">
-        <div class="button-container">
-          <button class="get-started-button">
-            <span class="gradient-border"></span>
-            <span class="button-content">
-              <span>Get Started</span>
-              <svg
-                class="arrow-icon"
-                aria-hidden="true"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
-                ></path>
-              </svg>
-            </span>
-          </button>
+      <nav id="topbar">
+        <div class="logo">
+          <a href="#"><img src="../img/QuizDEC (2).png" alt="Logo"></a>
         </div>
-        </a>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#" id="current">HOME</a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+          <li><a href="#"><img src="../img/search.png" alt="search" id="searchIcon"/></a></li>
+        </ul>
+      </nav>
+      <section>
+        <div class="content">
+          <div class="text-container">
+            <h1>Streamline Your Learning</h1>
+            <p>
+              QuizDEC revolutionizes the way students and educators engage with assessments. Create dynamic quizzes, share resources effortlessly, and evaluate progress—all in one user-friendly platform designed to enhance productivity and foster success.
+            </p>
+          </div>
+          <a href="login.html">
+            <div class="button-container">
+              <button class="get-started-button">
+                <span class="gradient-border"></span>
+                <span class="button-content">
+                  <span>Get Started</span>
+                  <svg
+                    class="arrow-icon"
+                    aria-hidden="true"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                    ></path>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </a>
+        </div>
       </section>
     </header>
   </section>
-    <main>
-        <p>Welcome</p>
-    </main>
-
-      <footer>
-        <section>
-            Product of
-            <p>
-                <img src="../img/UA_Logo_WHT_RGB-1-1024x280.png" class = "footer-img" alt="University of Alberta">
-            </p>
-        </section>
-      </footer>
+  <main>
+    <section class="intro">
+      <h2>QuizDEC is Just What You Need...</h2>
+    </section>    
+    <section class="cards">
+      <div class="card-wrapper">
+        <article class="card" onclick="toggleCard(this)">
+          <img src="../img/card1.png" alt="Engaging Design">
+          <div class="info">
+            <h1>Engaging Design</h1>
+            <p>Our platform features intuitive tools and visually appealing interfaces to ensure every quiz captivates and engages students.</p>
+          </div>
+        </article>
     
-  </body>
+        <article class="card" onclick="toggleCard(this)">
+          <img src="../img/card2.png" alt="Customizable Options">
+          <div class="info">
+            <h1>Customizable Options</h1>
+            <p>Tailor quizzes to fit your unique classroom needs with flexible formats, question types, and personalized settings.</p>
+          </div>
+        </article>
+    
+        <article class="card" onclick="toggleCard(this)">
+          <img src="../img/card3.png" alt="Real-Time Insights">
+          <div class="info">
+            <h1>Real-Time Insights</h1>
+            <p>Receive instant feedback and analytics to monitor progress and identify areas for improvement, fostering smarter learning decisions.</p>
+          </div>
+        </article>
+      </div>
+    </section>        
+  </main>
+  <footer>
+    <section>
+      Product of
+      <p>
+        <img src="../img/UA_Logo_WHT_RGB-1-1024x280.png" class="footer-img" alt="University of Alberta">
+      </p>
+    </section>
+  </footer>
+</body>
 </html>

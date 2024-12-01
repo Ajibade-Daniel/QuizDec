@@ -1,24 +1,13 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: black;
+  background-color: #000030;
   box-sizing: border-box;
-  color: #ec512f;
+  color: #ffffff;
   font-weight: 500;
-  height: 100vh;
   margin: 0;
   overflow-x: hidden;
 }
 
-#firstSection{
-  /* ombre effect as background gradient */
-  background: linear-gradient(
-    to bottom right, /*  gradient direction */
-    #6145B7 0%,      /* starting color at the top left corner */
-    #3E30A0 5%,     /* second color transition */
-    #02066F 25%,     /* third color transition */
-    #000030 100%     /* final color for the rest of the page */
-  );
-}
 body,
 section,
 header,
@@ -34,6 +23,30 @@ figcaption {
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #d35f45;
+}
+
+img {
+  max-width: 100%;
+}
+
+#firstSection {
+  background: linear-gradient(
+    to bottom right,
+    #6145B7 0%,
+    #3E30A0 5%,
+    #02066F 25%,
+    #000030 100%
+  );
+}
+
 header {
   background-image: url("../img/orangegirl_fr.png");
   background-size: 80%;
@@ -42,74 +55,83 @@ header {
   background-position-y: 5em;
   width: 100%;
   min-height: 700px;
-  margin-left: 2em;
-}
-header section{
-  margin-top: 5em;
-  margin-left: 6em;
-  /* Something is wrong with the margin right I think. I would use a br to fix this for now */
-  /* margin-right: ; */
-  padding-right: 3em;
-}
-section h1{
-  font-size: 75px;
-  color: white;
 }
 
 nav {
-  background-image: url(../img/QuizDEC\ \(2\).png);
-  background-position: left top;
-  background-size: 180px;
-  background-repeat: no-repeat;
-  padding: 1em 2em 2em 10em;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 2em;
+  position: relative;
 }
 
-
-nav ul{
-  margin-top: 1em;
-  margin-left: 40em;
+nav .logo img {
+  width: 180px;
 }
 
-li {
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
-nav li {
-  list-style-type: none;
-  display: inline-block;
-  margin-right: 3em;
+nav ul li {
+  margin-right: 2em;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-a:hover{
-  color: #d35f45;;
-}
-a img{
+nav ul li a img {
   width: 25px;
   height: 25px;
 }
 
-#current{
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+#current {
   color: #ec512f;
-  text-decoration: none;
 }
 
-.footer-img{
-    height: 45px;
+.content {
+  max-width: 800px;
+  margin-left: 6em;
+  margin-top: 2em;
 }
 
+.text-container {
+  max-width: 600px;
+}
 
-/* button container */
+.text-container h1 {
+  font-size: 75px;
+  color: white;
+  margin-bottom: 0.3em;
+  max-width: 100%;
+  line-height: 1.2;
+  word-wrap: break-word;
+}
+
+.text-container p {
+  text-align: justify;
+  max-width: 100%;
+}
+
 .button-container {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
-/* Get Started Button style */
 .get-started-button {
   position: relative;
   display: inline-block;
@@ -130,7 +152,6 @@ a img{
   transform: scale(0.95);
 }
 
-/* dradient border */
 .gradient-border {
   position: absolute;
   inset: 0;
@@ -145,7 +166,6 @@ a img{
   opacity: 1;
 }
 
-/* button content */
 .button-content {
   position: relative;
   z-index: 1;
@@ -153,21 +173,19 @@ a img{
   align-items: center;
   gap: 8px;
   padding: 12px 24px;
-  background-color: #000021; /* sark background */
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #02066F;
   border-radius: 12px;
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
 }
 
-/* text hover effect */
 .get-started-button:hover .button-content span {
   transform: translateX(4px);
   transition: transform 0.5s;
 }
 
-/* arrow icon styles */
 .arrow-icon {
   width: 24px;
   height: 24px;
@@ -178,47 +196,169 @@ a img{
   transform: translateX(4px);
 }
 
-.landing-content {
-  padding-left: 10em; 
-  padding-top: 5em; 
+.footer-img {
+  height: 45px;
 }
 
-.landing-content h1,
-.landing-content p,
-.landing-content .button-container {
-  text-align: left;
+main {
+  background-color: #000030;
 }
 
-.landing-content h1 {
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 48, 0.8);
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1em 2em;
+  }
+
+  nav ul li {
+    margin: 1em 0;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+
+  .content {
+    margin-left: 2em;
+    margin-right: 2em;
+    text-align: center;
+  }
+
+  .text-container {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .text-container h1 {
+    font-size: 50px;
+    max-width: 100%;
+  }
+
+  .text-container p {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .button-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text-container h1 {
+    font-size: 30px;
+  }
+}
+
+nav ul.active {
+  display: flex;
+}
+
+.cards {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  background: #000030;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+
+}
+
+.card {
+  width: 280px;
+  height: 200px;
+  padding: 2rem 1rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+  border-radius: 5px; 
+  overflow: hidden; 
+}
+
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 48, 0.5), rgba(97, 69, 183, 1));
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: 0.5s all;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card .info h1 {
+  margin: 0;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.intro {
+  text-align: center;
+  margin: 3em 0;
+  color: #ffffff;
+}
+
+.intro h2 {
+  font-size: 2rem;
   margin-bottom: 0.5em;
-}
-
-.landing-content p {
-  margin-bottom: 1em;
-}
-
-main{
-  background-color: #000021;
-}
-
-/* styles for small screens */
-
-@media only screen and (max-width:480px)
-{
-    header {
-        height: 50px;
-        padding: 1em 0em 2em 1em;
-    
-    }
-    header h1 {
-        font-size: 30px;   
-    }
-    
-}
-
-/* styles for tablet screens */
-@media only screen and (min-width: 481px)
-and (max-width: 768px)
-{
-    
 }
