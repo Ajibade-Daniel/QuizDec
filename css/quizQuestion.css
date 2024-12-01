@@ -21,6 +21,19 @@ body{
   background-repeat: no-repeat;
   background-position: center;
 }
+/* .container{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+.container>*{
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1 100%;
+} */
 main{
     background: #ffffff;
     width: 90%;
@@ -40,6 +53,7 @@ h1 img{
 }
 .quiz{
     padding: 20px 0;
+ 
 }
 .quiz h2{
     font-size: 20px;
@@ -151,3 +165,16 @@ h1 img{
 #navigator{
     display: inline;
 }
+
+/* aside>p{
+  display:flex;
+} */
+ /* .aside-grid{
+  background: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    display:flex;
+ } */
