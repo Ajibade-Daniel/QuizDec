@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(
+        to bottom right, /*  gradient direction */
+        #6145B7 0%,      /* starting color at the top left corner */
+        #3E30A0 5%,     /* second color transition */
+        #02066F 25%,     /* third color transition */
+        #000030 100%     /* final color for the rest of the page */
+      );  
+}
+
+.about{
+    width: 100%;
+    padding: 50px 0px;
+}
+.about img{
+    height: auto ;
+    width: 420px;
+    margin-top: 100px;
+}
+.content{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+}
+.content h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.content p{
+    color: white;
+    font-size: 20px;
+}
+span{
+    color: orangered;
+}
