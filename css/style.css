@@ -64,7 +64,7 @@ header {
   background-image: url("../img/orangegirl_fr.png");
   background-size: 80%;
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: 17em;
   background-position-y: 5em;
   width: 100%;
   min-height: 700px;
@@ -137,6 +137,7 @@ nav ul li a img {
 .text-container p {
   text-align: justify;
   max-width: 100%;
+  font-size: 20px;
 }
 
 .button-container {
@@ -212,7 +213,10 @@ nav ul li a img {
 .footer-img {
   height: 45px;
 }
-
+footer{
+  margin-top:5em;
+  margin-left:5em;
+}
 main {
   background-color: #000030;
 }
@@ -262,11 +266,18 @@ main {
   .button-container {
     justify-content: center;
   }
+  header{
+    background-position-x: center;
+  }
+  .text-container h1 {
+    margin-top:1.5em;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .text-container h1 {
     font-size: 30px;
+    margin-top:2em;
   }
 }
 
