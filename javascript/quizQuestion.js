@@ -113,7 +113,10 @@ function prevQuestion(){
     currentQuestionIndex--;
     showQuestion();
 }
-
+function prevQuestReview(){
+    currentQuestionIndex--;
+    showReview();
+}
 function submitPage(){
     document.getElementById("answer-buttons").innerHTML = "";
     document.getElementById("navigator").innerHTML = "";
