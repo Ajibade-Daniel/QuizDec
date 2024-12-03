@@ -9,14 +9,43 @@ body {
   background: url("../img/1.jpg");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   padding: 0 20px;
+  animation: bob 3s ease-in-out infinite;
+  -webkit-animation: bob 3s ease-in-out infinite; /*for safari & chrome :P */
+  animation: bob 3s ease-in-out infinite;
+}
+
+@keyframes bob {
+  0% {
+    background-position: center 0;
+  }
+  50% {
+    background-position: center 5px;
+  }
+  100% {
+    background-position: center 0;
+  }
+}
+
+@-webkit-keyframes bob {
+  0% {
+    background-position: center 0;
+  }
+  50% {
+    background-position: center 5px;
+  }
+  100% {
+    background-position: center 0;
+  }
 }
 
 .form-container {
