@@ -53,6 +53,13 @@ main{
   width: 40px;
   height: auto;
   text-decoration: none;
+  padding: 5px;
+}
+.backArrow img:hover{
+  transform: translateX(-10%);
+}
+.backArrow img:active{
+  transform: translateX(-15%);
 }
 .form-container {
   display: flex;
