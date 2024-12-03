@@ -54,6 +54,7 @@ main{
   height: auto;
   text-decoration: none;
   padding: 5px;
+  transition: all 0.3s;
 }
 .backArrow img:hover{
   transform: translateX(-10%);
