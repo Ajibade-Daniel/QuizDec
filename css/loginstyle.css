@@ -7,7 +7,6 @@
 
 body {
   background: url("../img/1.jpg") no-repeat center top;
-  overflow-y: hidden;
   margin: 0 20px;
   /* Animates the background image */
   animation: moveBackgroundUpDown 7s ease-in-out infinite;
