@@ -13,17 +13,17 @@ body {
   background-repeat: no-repeat;
   margin: 0;
   padding: 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
   padding: 0 20px;
   animation: bob 3s ease-in-out infinite;
   -webkit-animation: bob 3s ease-in-out infinite; /*for safari & chrome :P */
   animation: bob 3s ease-in-out infinite;
 }
-
+main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @keyframes bob {
   0% {
     background-position: center 0;
@@ -47,7 +47,13 @@ body {
     background-position: center 0;
   }
 }
-
+.backArrow img{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  width: 40px;
+  height: auto;
+  text-decoration: none;
+}
 .form-container {
   display: flex;
   width: 1000px;
