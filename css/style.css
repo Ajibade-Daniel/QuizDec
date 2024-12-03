@@ -1,6 +1,6 @@
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #000030;
+  background: #02066F;
   box-sizing: border-box;
   color: #ffffff;
   font-weight: 500;
@@ -218,7 +218,7 @@ footer{
   margin-left:5em;
 }
 main {
-  background-color: #000030;
+  background-color: #02066F;
 }
 
 @media screen and (max-width: 768px) {
@@ -294,7 +294,7 @@ nav ul.active {
   justify-content: center;
   align-items: center;
   margin-top: 1%;
-  background: #000030;
+  background: #02066F;
 }
 
 .card-wrapper {
