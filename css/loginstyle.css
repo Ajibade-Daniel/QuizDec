@@ -255,3 +255,11 @@ body {
 .social-login i:hover {
   transform: scale(0.9);
 }
+@media screen and (max-width: 580px) {
+  .imageSide{
+    display: none;
+  }
+  .col-2{
+    width: 100%;
+  }
+}
