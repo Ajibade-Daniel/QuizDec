@@ -114,7 +114,7 @@ function prevQuestion(){
     showQuestion();
 }
 function prevQuestReview(){
-    currentQuestionIndex++;
+    currentQuestionIndex--;
     showReview();
 }
 function submitPage(){
