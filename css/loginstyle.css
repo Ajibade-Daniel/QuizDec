@@ -74,7 +74,7 @@ main{
   width: 55%;
   background: rgba(255, 255, 225, 0.3);
   backdrop-filter: blur(30px);
-  border-radius: 25px 10% 10% 25px;
+  border-radius: 25px 5% 5% 25px;
   transition: border-radius 0.3s;
 }
 
