@@ -2,6 +2,7 @@ const loginBtn = document.querySelector("#login");
 const registrationBtn = document.querySelector("#register");
 const loginForm = document.querySelector(".login-form");
 const registrationForm = document.querySelector(".registration-form");
+registrationForm.style.opacity = 0;
 
 loginBtn.addEventListener('click', () => {
   loginBtn.style.backgroundColor = '#02066F';
@@ -9,6 +10,7 @@ loginBtn.addEventListener('click', () => {
 
   loginForm.style.left = "50%";
   registrationForm.style.left = "-50%";
+
   loginForm.style.opacity = 1;
   registrationForm.style.opacity = 0;
 });

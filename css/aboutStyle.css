@@ -9,6 +9,7 @@
 }
 
 body{
+    font-family: 'Lexend Deca', sans-serif;
     background: linear-gradient(
         to bottom right, /*  gradient direction */
         #6145B7 0%,      /* starting color at the top left corner */
