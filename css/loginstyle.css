@@ -9,8 +9,8 @@ body {
   background: url("../img/1.jpg") no-repeat center top;
   margin: 0 20px;
   /* Animates the background image */
-  animation: moveBackgroundUpDown 7s ease-in-out infinite;
-  -webkit-animation: moveBackgroundUpDown 7s ease-in-out infinite; /*for safari & chrome :P */
+  animation: moveBackgroundUpDown 10s ease-in-out infinite;
+  -webkit-animation: moveBackgroundUpDown 10s ease-in-out infinite; /*for safari & chrome :P */
 }
 main{
   display: flex;
