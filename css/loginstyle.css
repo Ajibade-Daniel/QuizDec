@@ -7,31 +7,41 @@
 
 body {
   background: url("../img/1.jpg") no-repeat center top;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  padding: 0 20px;
+  overflow-y: hidden;
+  margin: 0 20px;
   /* Animates the background image */
-  animation: moveBackgroundUpDown 6s ease-in-out infinite;
+  animation: moveBackgroundUpDown 7s ease-in-out infinite;
+  -webkit-animation: moveBackgroundUpDown 7s ease-in-out infinite; /*for safari & chrome :P */
 }
 main{
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @keyframes moveBackgroundUpDown {
   0% {
     background-position: center top;
   }
   50% {
-    background-position: center bottom;
+    background-position: center center;
   }
   100% {
     background-position: center top;
   }
-}
+ }
 
+@-webkit-keyframes moveBackgroundUpDown {
+  0% {
+    background-position: center top;
+  }
+  50% {
+    background-position: center center;
+  }
+  100% {
+    background-position: center top;
+  }
+ }
 .backArrow img{
   margin-top: 2em;
   margin-bottom: 1em;
