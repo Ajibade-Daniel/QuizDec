@@ -6,61 +6,46 @@
 }
 
 body {
-  background: url("../img/1.jpg");
-  background-position: center;
+  background: url("../img/1.jpg") no-repeat center top;
   background-size: cover;
-  /* background-attachment: fixed; */
-  background-repeat: no-repeat;
   margin: 0;
   padding: 0;
   min-height: 100vh;
   padding: 0 20px;
-  animation: bob 3s ease-in-out infinite;
-  -webkit-animation: bob 3s ease-in-out infinite; /*for safari & chrome :P */
-  animation: bob 3s ease-in-out infinite;
+  /* Animates the background image */
+  animation: moveBackgroundUpDown 6s ease-in-out infinite;
 }
 main{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-@keyframes bob {
+@keyframes moveBackgroundUpDown {
   0% {
-    background-position: center 0;
+    background-position: center top;
   }
   50% {
-    background-position: center 5px;
+    background-position: center bottom;
   }
   100% {
-    background-position: center 0;
+    background-position: center top;
   }
 }
 
-@-webkit-keyframes bob {
-  0% {
-    background-position: center 0;
-  }
-  50% {
-    background-position: center 5px;
-  }
-  100% {
-    background-position: center 0;
-  }
-}
 .backArrow img{
   margin-top: 2em;
   margin-bottom: 1em;
   width: 40px;
   height: auto;
   text-decoration: none;
-  padding: 5px;
+  padding: 0;
   transition: all 0.3s;
 }
 .backArrow img:hover{
   transform: translateX(-10%);
 }
 .backArrow img:active{
-  transform: translateX(-15%);
+  transform: translateX(-20%);
 }
 .form-container {
   display: flex;
@@ -99,12 +84,13 @@ main{
 }
 
 .testimonials {
+  font-weight: 600;
   text-align: center;
   color: white;
   width: 300px;
 }
 .testimonials span {
-  font-weight: bold;
+  font-weight: 900;
   color: #000030;
 }
 
@@ -122,25 +108,32 @@ main{
 }
 
 .btn {
-  font-weight: 500;
-  padding: 5px 30px;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 13px 30px;
   border: none;
   border-radius: 30px;
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: 0.2s;
+  transition: all 0.2s;
 }
 
 .btn1 {
   background: #02066F;
 }
 
-.btn1:hover {
+.btn:hover{
   opacity: 0.7;
 }
 
+.noHover{
+  opacity: 1;
+}
+.noHover:hover{
+  opacity: 1;
+}
 .login-form {
   position: absolute;
   left: 50%;
@@ -225,6 +218,8 @@ main{
 }
 
 .input-submit {
+  font-size: 16px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -269,7 +264,7 @@ main{
 .social-login i:hover {
   transform: scale(0.9);
 }
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 650px) {
   .imageSide{
     display: none;
   }

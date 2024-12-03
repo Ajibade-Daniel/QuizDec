@@ -13,6 +13,8 @@ loginBtn.addEventListener('click', () => {
 
   loginForm.style.opacity = 1;
   registrationForm.style.opacity = 0;
+  loginBtn.classList.add("noHover");
+  registrationBtn.classList.remove("noHover");
 });
 
 
@@ -28,4 +30,9 @@ registrationBtn.addEventListener('click', () => {
 
     loginForm.style.opacity = 0;
     registrationForm.style.opacity = 1;
+    registrationBtn.classList.add("noHover");
+    loginBtn.classList.remove("noHover");
   });
+
+loginBtn.classList.add("noHover");
+registrationBtn.classList.remove("noHover");
