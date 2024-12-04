@@ -177,6 +177,10 @@ function showReview(){
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    console.log(optionsSelected[currentQuestionIndex])
+    if(optionsSelected[currentQuestionIndex] == undefined){
+        questionElement.innerHTML += " - Not Answered"
+    }
     for (option of currentQuestion.options){
         const button = document.createElement("button");
         button.innerHTML = option;

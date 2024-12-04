@@ -54,13 +54,25 @@ span{
 }
 
 a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  a:hover {
-    color: #d35f45;
-  }
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s;
+  font-size: 1em;
+}
+
+a:hover {
+  color: #f58167;;
+  font-size: 1.1em;
+  text-shadow: 
+      0 0 10px #ec512f, 
+      0 0 20px #ec512f, 
+      0 0 30px #ec5f3f, 
+      0 0 40px #ec6d4f, 
+      0 0 50px #ec7b5f, 
+      0 0 60px #ec896f, 
+      0 0 70px #ec976f;
+}
   
   img {
     max-width: 100%;
